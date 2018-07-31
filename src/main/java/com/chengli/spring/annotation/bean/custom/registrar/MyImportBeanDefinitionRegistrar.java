@@ -1,6 +1,6 @@
-package com.chengli.spring.annotation.develop.custom.registrar;
+package com.chengli.spring.annotation.bean.custom.registrar;
 
-import com.chengli.spring.annotation.develop.service.Red;
+import com.chengli.spring.annotation.bean.po.Red;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;

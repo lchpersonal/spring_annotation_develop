@@ -1,4 +1,4 @@
-package com.chengli.spring.annotation.develop.custom.importselector;
+package com.chengli.spring.annotation.bean.custom.importselector;
 
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.type.AnnotationMetadata;
@@ -9,6 +9,6 @@ import org.springframework.core.type.AnnotationMetadata;
  */
 public class MyImportSelector implements ImportSelector {
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
-        return new String[]{"com.chengli.spring.annotation.develop.service.Yellow"};
+        return new String[]{"com.chengli.spring.annotation.bean.po.Yellow"};
     }
 }

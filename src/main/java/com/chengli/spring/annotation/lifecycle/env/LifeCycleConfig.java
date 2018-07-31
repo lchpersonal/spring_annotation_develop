@@ -24,7 +24,7 @@ import org.springframework.stereotype.Component;
  * 4).BeanPostProcessor接口，次接口的实现了不是注册类实例的，而是每个实例注册的过程中，都会调用此类的接口
  * postProcessBeforeInitialization在Bean实例化完成之后，在任何初始化方法调用之前执行
  * @see org.springframework.beans.factory.config.BeanPostProcessor#postProcessBeforeInitialization
- * postProcessAfterInitialization在bean的销毁方法调用之后调用
+ * postProcessAfterInitialization 在bean初始化方法调用之后执行
  * @see org.springframework.beans.factory.config.BeanPostProcessor#postProcessAfterInitialization
  */
 @Configuration

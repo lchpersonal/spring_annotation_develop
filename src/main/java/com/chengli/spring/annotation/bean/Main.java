@@ -1,6 +1,6 @@
-package com.chengli.spring.annotation.develop;
+package com.chengli.spring.annotation.bean;
 
-import com.chengli.spring.annotation.develop.env.Config;
+import com.chengli.spring.annotation.bean.env.Config;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

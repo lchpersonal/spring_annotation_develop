@@ -1,4 +1,4 @@
-package com.chengli.spring.annotation.develop.custom.condition;
+package com.chengli.spring.annotation.bean.custom.condition;
 
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;

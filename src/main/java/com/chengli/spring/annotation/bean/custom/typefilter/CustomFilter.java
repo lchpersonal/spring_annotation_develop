@@ -1,4 +1,4 @@
-package com.chengli.spring.annotation.develop.custom.typefilter;
+package com.chengli.spring.annotation.bean.custom.typefilter;
 
 import org.springframework.core.type.classreading.MetadataReader;
 import org.springframework.core.type.classreading.MetadataReaderFactory;

@@ -1,12 +1,12 @@
-package com.chengli.spring.annotation.develop.env;
+package com.chengli.spring.annotation.bean.env;
 
-import com.chengli.spring.annotation.develop.custom.condition.ConditionOs;
-import com.chengli.spring.annotation.develop.custom.factorybean.ColorFactoryBean;
-import com.chengli.spring.annotation.develop.custom.importselector.MyImportSelector;
-import com.chengli.spring.annotation.develop.custom.registrar.MyImportBeanDefinitionRegistrar;
-import com.chengli.spring.annotation.develop.service.Dog;
-import com.chengli.spring.annotation.develop.service.Person;
-import com.chengli.spring.annotation.develop.custom.typefilter.CustomFilter;
+import com.chengli.spring.annotation.bean.custom.condition.ConditionOs;
+import com.chengli.spring.annotation.bean.custom.factorybean.ColorFactoryBean;
+import com.chengli.spring.annotation.bean.custom.importselector.MyImportSelector;
+import com.chengli.spring.annotation.bean.custom.registrar.MyImportBeanDefinitionRegistrar;
+import com.chengli.spring.annotation.bean.po.Dog;
+import com.chengli.spring.annotation.bean.po.Person;
+import com.chengli.spring.annotation.bean.custom.typefilter.CustomFilter;
 import org.springframework.context.annotation.*;
 import org.springframework.stereotype.Controller;
 
@@ -29,7 +29,7 @@ import org.springframework.stereotype.Controller;
  * 可以通过添加Filter来定义其他扫描规则 当使用includeFilters的时候，应当将useDefaultFilters的值，置为false
  */
 @Import({Dog.class, MyImportSelector.class, MyImportBeanDefinitionRegistrar.class})
-@ComponentScan(basePackages = {"com.chengli.spring.annotation.develop.service"},
+@ComponentScan(basePackages = {"com.chengli.spring.annotation.bean.po"},
         excludeFilters = {
                 /**这里配置filter表示排除Dog类，当然还可以通过指定FtiletType为Annotation来过滤指定注解的类，includeFilter同理*/
                 @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = {Dog.class}),

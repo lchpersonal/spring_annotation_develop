@@ -1,6 +1,6 @@
-package com.chengli.spring.annotation.develop.custom.factorybean;
+package com.chengli.spring.annotation.bean.custom.factorybean;
 
-import com.chengli.spring.annotation.develop.service.Color;
+import com.chengli.spring.annotation.bean.po.Color;
 import org.springframework.beans.factory.FactoryBean;
 
 /**
