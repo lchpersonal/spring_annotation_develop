@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
  * 3).通过@PostContructor和@PreDestory (JSR250规范的注解)
  * @see com.chengli.spring.annotation.lifecycle.po.Dog
  * <p>
- * 4).BeanPostProcessor接口，次接口的实现了不是注册类实例的，而是每个实例注册的过程中，都会调用此类的接口
+ * 4).BeanPostProcessor接口，此接口的实现了不是注册类实例的，而是每个实例注册的过程中，都会调用此类的接口
  * postProcessBeforeInitialization在Bean实例化完成之后，在任何初始化方法调用之前执行
  * @see org.springframework.beans.factory.config.BeanPostProcessor#postProcessBeforeInitialization
  * postProcessAfterInitialization 在bean初始化方法调用之后执行

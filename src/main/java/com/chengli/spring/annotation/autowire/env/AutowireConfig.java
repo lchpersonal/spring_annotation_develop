@@ -1,6 +1,5 @@
 package com.chengli.spring.annotation.autowire.env;
 
-import com.chengli.spring.annotation.autowire.service.AwareTest;
 import com.chengli.spring.annotation.autowire.service.BookDao;
 import com.chengli.spring.annotation.autowire.service.Car;
 import org.springframework.context.ApplicationContext;
